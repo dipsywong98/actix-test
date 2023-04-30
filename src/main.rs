@@ -1,7 +1,7 @@
 use actix_http::body::BoxBody;
-use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
 use actix_web::dev::{ServiceFactory, ServiceRequest, ServiceResponse};
-use actix_web::{Error};
+use actix_web::Error;
+use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
 
 #[get("/")]
 async fn hello() -> impl Responder {
@@ -34,7 +34,7 @@ pub fn create_app() -> App<
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    HttpServer::new(|| create_app())
+    HttpServer::new(create_app)
         .bind(("127.0.0.1", 8080))?
         .run()
         .await
