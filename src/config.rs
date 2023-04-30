@@ -16,6 +16,5 @@ pub fn get_config() -> AppConfig {
         .build()
         .unwrap();
 
-    settings.try_deserialize()
-            .unwrap()
+    settings.try_deserialize().unwrap()
 }
