@@ -41,3 +41,4 @@ async fn main() -> std::io::Result<()> {
 }
 
 mod test;
+pub mod config;

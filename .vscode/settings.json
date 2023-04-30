@@ -5,4 +5,5 @@
   "rust-analyzer.linkedProjects": [
     "./Cargo.toml"
   ],
+  "editor.indentSize": 4
 }

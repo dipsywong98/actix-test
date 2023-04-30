@@ -8,4 +8,6 @@ edition = "2021"
 [dependencies]
 actix-http = "3.3.1"
 actix-web = "4.3.1"
+config = "0.13.3"
+redis = "0.23.0"
 serde = "1.0.160"
