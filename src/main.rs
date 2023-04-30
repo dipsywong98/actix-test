@@ -40,5 +40,5 @@ async fn main() -> std::io::Result<()> {
         .await
 }
 
-mod test;
 pub mod config;
+mod test;

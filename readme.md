@@ -27,3 +27,11 @@ Run the tests
 ```bash
 cargo test
 ```
+
+For pre-commit-hook uses <https://pre-commit.com/>
+
+```sh
+# setup
+pip install pre-commit
+pre-commit install
+```
