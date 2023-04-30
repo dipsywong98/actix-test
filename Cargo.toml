@@ -6,8 +6,14 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+actix = "0.13.0"
 actix-http = "3.3.1"
 actix-web = "4.3.1"
+actix-web-actors = "4.2.0"
 config = "0.13.3"
+futures-util = "0.3.28"
 redis = "0.23.0"
 serde = "1.0.160"
+
+[dev-dependencies]
+actix-test = "0.1.1"
